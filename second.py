@@ -1,12 +1,22 @@
-n=int(input('enter any number'))
-s=0
-for k in range(1,n+1):
-    if (n%k==0):
-        print(k,end=" ")
-for i in range(1,n):
-    if(n%i==0):
-        s=s+i
-if(s==n):
-    print(',',n,'is a perfect number')
-else:
-    print(',',n,'is not a perfect number')           
+n=input('enter any thing: ')
+b=[]
+for i in n:
+    b.append(ord(i)) 
+
+c=[]
+for k in b:
+    c.append(chr(k+3))
+str1=''
+for m in c:
+    str1+=m
+print('encrypted:',str1)
+d=[]
+for i in n:
+    d.append(ord(i))
+e=[]
+for l in d:
+    e.append(chr(l))
+str2=''
+for g in e:
+    str2+=g
+print('decrypted:',str2)     
