@@ -1,4 +1,3 @@
-print('raviteja 222010308023')
 start=int(input('enter any number'))
 end=int(input('enter any number'))
 for i in range(start,end+1):
