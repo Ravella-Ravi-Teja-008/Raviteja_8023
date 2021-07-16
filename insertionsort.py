@@ -17,4 +17,4 @@ for k in range(p):
 print(arr)
 insertionSort(arr)
 for q in range(len(arr)):
-    print("% d" % arr[q])
+    print(arr[q])
