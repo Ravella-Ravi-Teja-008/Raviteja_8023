@@ -9,7 +9,12 @@ def insertionSort(arr):
 
 
 # main code
-arr = [12, 11, 13, 5, 6]
+arr = []
+p=int(input("enter the length of list"))
+for k in range(p):
+    q=int(input('enter the value'))
+    arr.append(q)
+print(arr)
 insertionSort(arr)
 for i in range(len(arr)):
     print("% d" % arr[i])
