@@ -1,14 +1,19 @@
-A = [64, 25, 12, 22, 11]
-for i in range(len(A)):
+print("Raviteja 222010308023")
+arr=[]
+n=int(input("enter the length of array "))
+for i in range(n):
+    k=int(input('enter the number '))
+    arr.append(k)
 
-    min_idx = i
-    for j in range(i+1, len(A)):
-        if A[min_idx] > A[j]:
-            min_idx = j
+count=0
+for i in range(1, n):
+        key = arr[i]
+        j = i-1
+        count+=1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+            arr[j + 1] = key
 
-    A[i], A[min_idx] = A[min_idx], A[i]
-
-#main code
-print("Sorted array")
-for i in range(len(A)):
-    print("%d" % A[i])
+print(arr)
+print("NO. of comparisions ",count)
