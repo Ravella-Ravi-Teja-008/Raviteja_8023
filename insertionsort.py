@@ -1,20 +1,24 @@
-def insertionSort(arr):
-      for i in range(1, len(arr)):
-          key = arr[i]
-          j = i-1
-          while j >= 0 and key < arr[j]:
-              arr[j + 1] = arr[j]
-              j -= 1
-              arr[j + 1] = key
-
-
-# main code
-arr = []
-p=int(input("enter the length of list "))
-for k in range(p):
-    q=int(input('enter the value: '))
+print('Raviteja 222010308023')
+arr=[]
+n=int(input("enter the length of array: "))
+for i in range(n):
+    q=int(input('enter the element'))
     arr.append(q)
+
+b=len(arr)
+count=0
+for i in range(1,b):
+    j=arr[i]
+    p=i
+    k=i-1
+    while k>=0:
+        if arr[k]>j:
+            arr[k],arr[p]=arr[p],arr[k]
+            count+=1
+            k-=1
+            p-=1
+        else:
+            break
+
 print(arr)
-insertionSort(arr)
-for q in range(len(arr)):
-    print(arr[q])
+print("NO. of comparisions: ",count)
