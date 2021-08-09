@@ -20,4 +20,3 @@ while c!=0:
             print("Stack Underflow situation")
 
     c=int(input("To continue press 1 else press 0 to exit: "))
-
